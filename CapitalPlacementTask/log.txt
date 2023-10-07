@@ -594,3 +594,240 @@ OFFSET 0 LIMIT 1
 2023-10-07 19:45:31.188 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.7187ms
 2023-10-07 19:45:31.875 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - -
 2023-10-07 19:45:32.143 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.8038ms
+2023-10-07 20:54:29.816 +01:00 [INF] Starting up...
+2023-10-07 20:54:42.641 +01:00 [INF] Now listening on: https://localhost:7041
+2023-10-07 20:54:42.646 +01:00 [INF] Now listening on: http://localhost:5117
+2023-10-07 20:54:42.652 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-07 20:54:42.654 +01:00 [INF] Hosting environment: Development
+2023-10-07 20:54:42.659 +01:00 [INF] Content root path: C:\Projects\ASP\CapitalPlacementTask\CapitalPlacementTask
+2023-10-07 20:55:09.297 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/index.html - -
+2023-10-07 20:55:09.765 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/index.html - - - 200 - text/html;charset=utf-8 471.0157ms
+2023-10-07 20:55:10.392 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - -
+2023-10-07 20:55:10.412 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - - - 200 12372 application/javascript;+charset=utf-8 20.0449ms
+2023-10-07 20:55:10.489 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_vs/browserLink - -
+2023-10-07 20:55:10.672 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 182.8705ms
+2023-10-07 20:55:11.177 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - -
+2023-10-07 20:55:11.581 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 404.1037ms
+2023-10-07 21:23:05.396 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:7041/api/ProgramDetail application/json 520
+2023-10-07 21:23:05.492 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.ProgramDetailController.Post (CapitalPlacementTask)'
+2023-10-07 21:23:05.789 +01:00 [INF] Route matched with {action = "Post", controller = "ProgramDetail"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CapitalPlacementTask.DTOs.ProgramDetailDTO) on controller CapitalPlacementTask.Controllers.ProgramDetailController (CapitalPlacementTask).
+2023-10-07 21:23:07.694 +01:00 [INF] Executing SQL query for container 'CapitalPlacementTaskDbContext' in partition '?' [Parameters=[@__request_ProgramTitle_0=?]]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["ProgramTitle"] = @__request_ProgramTitle_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:23:10.565 +01:00 [INF] Executed ReadNext (2430.094 ms, 2.8 RU) ActivityId='47a679e4-5037-42e4-80e7-3265941bf66e', Container='CapitalPlacementTaskDbContext', Partition='?', Parameters=[@__request_ProgramTitle_0=?]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["ProgramTitle"] = @__request_ProgramTitle_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:23:11.011 +01:00 [INF] Executed CreateItem (81.1178 ms, 13.9 RU) ActivityId='92115c14-10ad-4100-89e0-ffd811ffa2d1', Container='CapitalPlacementTaskDbContext', Id='?', Partition='?'
+2023-10-07 21:23:11.098 +01:00 [INF] Executing OkObjectResult, writing value of type 'CapitalPlacementTask.Common.CreateResponse`1[[CapitalPlacementTask.Models.ProgramDetail, CapitalPlacementTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-07 21:23:11.199 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.ProgramDetailController.Post (CapitalPlacementTask) in 5400.2015ms
+2023-10-07 21:23:11.206 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.ProgramDetailController.Post (CapitalPlacementTask)'
+2023-10-07 21:23:11.213 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:7041/api/ProgramDetail application/json 520 - 200 - application/json;+charset=utf-8 5816.3182ms
+2023-10-07 21:28:19.460 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:7041/api/ProgramDetail application/json 520
+2023-10-07 21:28:19.468 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.ProgramDetailController.Post (CapitalPlacementTask)'
+2023-10-07 21:28:19.485 +01:00 [INF] Route matched with {action = "Post", controller = "ProgramDetail"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CapitalPlacementTask.DTOs.ProgramDetailDTO) on controller CapitalPlacementTask.Controllers.ProgramDetailController (CapitalPlacementTask).
+2023-10-07 21:28:19.544 +01:00 [INF] Executing SQL query for container 'CapitalPlacementTaskDbContext' in partition '?' [Parameters=[@__request_ProgramTitle_0=?]]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["ProgramTitle"] = @__request_ProgramTitle_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:28:19.808 +01:00 [INF] Executed ReadNext (251.9654 ms, 2.93 RU) ActivityId='9258f078-2368-48bd-8ef2-0c6463d84c21', Container='CapitalPlacementTaskDbContext', Partition='?', Parameters=[@__request_ProgramTitle_0=?]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["ProgramTitle"] = @__request_ProgramTitle_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:28:19.858 +01:00 [INF] Executing OkObjectResult, writing value of type 'CapitalPlacementTask.Common.CreateResponse`1[[CapitalPlacementTask.Models.ProgramDetail, CapitalPlacementTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-07 21:28:19.866 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.ProgramDetailController.Post (CapitalPlacementTask) in 376.0242ms
+2023-10-07 21:28:19.869 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.ProgramDetailController.Post (CapitalPlacementTask)'
+2023-10-07 21:28:19.873 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:7041/api/ProgramDetail application/json 520 - 200 - application/json;+charset=utf-8 412.8652ms
+2023-10-07 21:28:27.056 +01:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7041/api/ApplicationForm/07632a86-72d3-4716-9479-08dbc676e6cb application/json 913
+2023-10-07 21:28:27.064 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask)'
+2023-10-07 21:28:27.119 +01:00 [INF] Route matched with {action = "Put", controller = "ApplicationForm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(System.Guid, CapitalPlacementTask.DTOs.ApplicationFormDTO) on controller CapitalPlacementTask.Controllers.ApplicationFormController (CapitalPlacementTask).
+2023-10-07 21:28:27.185 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask) in 60.4933ms
+2023-10-07 21:28:27.286 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask)'
+2023-10-07 21:28:35.224 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CapitalPlacementTask.Interfaces.IApplicationFormService' while attempting to activate 'CapitalPlacementTask.Controllers.ApplicationFormController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method513(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-07 21:28:35.518 +01:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7041/api/ApplicationForm/07632a86-72d3-4716-9479-08dbc676e6cb application/json 913 - 500 - text/plain;+charset=utf-8 8463.3498ms
+2023-10-07 21:28:44.107 +01:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7041/api/Stage/07632a86-72d3-4716-9479-08dbc676e6cb application/json 98
+2023-10-07 21:28:44.113 +01:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7041/api/Stage/07632a86-72d3-4716-9479-08dbc676e6cb application/json 98 - 404 0 - 6.2487ms
+2023-10-07 21:29:11.799 +01:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7041/api/ApplicationForm/07632a86-72d3-4716-9479-08dbc676e6cb application/json 913
+2023-10-07 21:29:11.802 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask)'
+2023-10-07 21:29:11.808 +01:00 [INF] Route matched with {action = "Put", controller = "ApplicationForm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(System.Guid, CapitalPlacementTask.DTOs.ApplicationFormDTO) on controller CapitalPlacementTask.Controllers.ApplicationFormController (CapitalPlacementTask).
+2023-10-07 21:29:11.814 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask) in 0.6203ms
+2023-10-07 21:29:11.818 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask)'
+2023-10-07 21:29:11.851 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CapitalPlacementTask.Interfaces.IApplicationFormService' while attempting to activate 'CapitalPlacementTask.Controllers.ApplicationFormController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method513(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-07 21:29:11.929 +01:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7041/api/ApplicationForm/07632a86-72d3-4716-9479-08dbc676e6cb application/json 913 - 500 - text/plain;+charset=utf-8 130.5868ms
+2023-10-07 21:45:44.811 +01:00 [INF] Starting up...
+2023-10-07 21:45:55.066 +01:00 [INF] Now listening on: https://localhost:7041
+2023-10-07 21:45:55.072 +01:00 [INF] Now listening on: http://localhost:5117
+2023-10-07 21:45:55.081 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-07 21:45:55.084 +01:00 [INF] Hosting environment: Development
+2023-10-07 21:45:55.086 +01:00 [INF] Content root path: C:\Projects\ASP\CapitalPlacementTask\CapitalPlacementTask
+2023-10-07 21:45:55.238 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/index.html - -
+2023-10-07 21:45:55.581 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/index.html - - - 200 - text/html;charset=utf-8 344.8271ms
+2023-10-07 21:45:55.602 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - -
+2023-10-07 21:45:55.618 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - - - 200 12372 application/javascript;+charset=utf-8 15.4445ms
+2023-10-07 21:45:55.639 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_vs/browserLink - -
+2023-10-07 21:45:55.661 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.4501ms
+2023-10-07 21:45:56.367 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - -
+2023-10-07 21:45:56.605 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 237.8923ms
+2023-10-07 21:52:37.046 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:7041/api/ProgramDetail application/json 520
+2023-10-07 21:52:37.065 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.ProgramDetailController.Post (CapitalPlacementTask)'
+2023-10-07 21:52:37.110 +01:00 [INF] Route matched with {action = "Post", controller = "ProgramDetail"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CapitalPlacementTask.DTOs.ProgramDetailDTO) on controller CapitalPlacementTask.Controllers.ProgramDetailController (CapitalPlacementTask).
+2023-10-07 21:52:38.105 +01:00 [INF] Executing SQL query for container 'CapitalPlacementTaskDbContext' in partition '?' [Parameters=[@__request_ProgramTitle_0=?]]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["ProgramTitle"] = @__request_ProgramTitle_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:52:39.068 +01:00 [INF] Executed ReadNext (923.7208 ms, 2.8 RU) ActivityId='d3a9f9fa-e105-4835-9920-936d1c42120f', Container='CapitalPlacementTaskDbContext', Partition='?', Parameters=[@__request_ProgramTitle_0=?]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["ProgramTitle"] = @__request_ProgramTitle_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:52:39.687 +01:00 [INF] Executed CreateItem (251.3883 ms, 13.9 RU) ActivityId='9bc50442-10c6-46d1-a37c-e7ed4550024b', Container='CapitalPlacementTaskDbContext', Id='?', Partition='?'
+2023-10-07 21:52:39.737 +01:00 [INF] Executing OkObjectResult, writing value of type 'CapitalPlacementTask.Common.CreateResponse`1[[CapitalPlacementTask.Models.ProgramDetail, CapitalPlacementTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-07 21:52:39.813 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.ProgramDetailController.Post (CapitalPlacementTask) in 2687.5046ms
+2023-10-07 21:52:39.818 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.ProgramDetailController.Post (CapitalPlacementTask)'
+2023-10-07 21:52:39.829 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:7041/api/ProgramDetail application/json 520 - 200 - application/json;+charset=utf-8 2783.4185ms
+2023-10-07 21:57:06.271 +01:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7041/api/ApplicationForm/07632a86-72d3-4716-9479-08dbc676e6cb application/json 913
+2023-10-07 21:57:06.279 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask)'
+2023-10-07 21:57:06.293 +01:00 [INF] Route matched with {action = "Put", controller = "ApplicationForm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(System.Guid, CapitalPlacementTask.DTOs.ApplicationFormDTO) on controller CapitalPlacementTask.Controllers.ApplicationFormController (CapitalPlacementTask).
+2023-10-07 21:57:06.386 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-07 21:57:06.425 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask) in 128.4455ms
+2023-10-07 21:57:06.431 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask)'
+2023-10-07 21:57:06.433 +01:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7041/api/ApplicationForm/07632a86-72d3-4716-9479-08dbc676e6cb application/json 913 - 400 - application/problem+json;+charset=utf-8 162.7217ms
+2023-10-07 21:58:24.785 +01:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7041/api/ApplicationForm/07632a86-72d3-4716-9479-08dbc676e6cb application/json 913
+2023-10-07 21:58:24.788 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask)'
+2023-10-07 21:58:24.790 +01:00 [INF] Route matched with {action = "Put", controller = "ApplicationForm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(System.Guid, CapitalPlacementTask.DTOs.ApplicationFormDTO) on controller CapitalPlacementTask.Controllers.ApplicationFormController (CapitalPlacementTask).
+2023-10-07 21:58:24.999 +01:00 [INF] Executing SQL query for container 'CapitalPlacementTaskDbContext' in partition '?' [Parameters=[@__get_Item_0=?]]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["Id"] = @__get_Item_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:58:25.022 +01:00 [INF] Executed ReadNext (13.7499 ms, 2.89 RU) ActivityId='4c3ed384-d13a-4a37-80a1-5091e242b6e4', Container='CapitalPlacementTaskDbContext', Partition='?', Parameters=[@__get_Item_0=?]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["Id"] = @__get_Item_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:58:25.039 +01:00 [INF] Executing OkObjectResult, writing value of type 'CapitalPlacementTask.Common.CreateResponse`1[[CapitalPlacementTask.Models.ApplicationForm, CapitalPlacementTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-07 21:58:25.044 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask) in 245.9866ms
+2023-10-07 21:58:25.054 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask)'
+2023-10-07 21:58:25.056 +01:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7041/api/ApplicationForm/07632a86-72d3-4716-9479-08dbc676e6cb application/json 913 - 200 - application/json;+charset=utf-8 271.1962ms
+2023-10-07 21:59:06.817 +01:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7041/api/ApplicationForm/33b6200e-db28-4034-7956-08dbc77757d1 application/json 913
+2023-10-07 21:59:06.820 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask)'
+2023-10-07 21:59:06.827 +01:00 [INF] Route matched with {action = "Put", controller = "ApplicationForm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(System.Guid, CapitalPlacementTask.DTOs.ApplicationFormDTO) on controller CapitalPlacementTask.Controllers.ApplicationFormController (CapitalPlacementTask).
+2023-10-07 21:59:06.845 +01:00 [INF] Executing SQL query for container 'CapitalPlacementTaskDbContext' in partition '?' [Parameters=[@__get_Item_0=?]]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["Id"] = @__get_Item_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:59:06.892 +01:00 [INF] Executed ReadNext (41.008 ms, 2.93 RU) ActivityId='3386bffe-a6f4-4486-a8b0-b063a0fa6d63', Container='CapitalPlacementTaskDbContext', Partition='?', Parameters=[@__get_Item_0=?]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["Id"] = @__get_Item_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:59:07.481 +01:00 [INF] Executed ReplaceItem (276.5115 ms, 22.86 RU) ActivityId='368c9d75-860a-40ca-811b-128abffdcfd0', Container='CapitalPlacementTaskDbContext', Id='?', Partition='?'
+2023-10-07 21:59:07.502 +01:00 [INF] Executing OkObjectResult, writing value of type 'CapitalPlacementTask.Common.CreateResponse`1[[CapitalPlacementTask.Models.ApplicationForm, CapitalPlacementTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-07 21:59:07.519 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask) in 687.0096ms
+2023-10-07 21:59:07.527 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.ApplicationFormController.Put (CapitalPlacementTask)'
+2023-10-07 21:59:07.530 +01:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7041/api/ApplicationForm/33b6200e-db28-4034-7956-08dbc77757d1 application/json 913 - 200 - application/json;+charset=utf-8 712.4732ms
+2023-10-07 21:59:16.661 +01:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7041/api/WorkFlow/33b6200e-db28-4034-7956-08dbc77757d1 application/json 98
+2023-10-07 21:59:16.664 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.WorkFlowController.Put (CapitalPlacementTask)'
+2023-10-07 21:59:16.674 +01:00 [INF] Route matched with {action = "Put", controller = "WorkFlow"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(System.Guid, System.Collections.Generic.List`1[CapitalPlacementTask.DTOs.StageDTO]) on controller CapitalPlacementTask.Controllers.WorkFlowController (CapitalPlacementTask).
+2023-10-07 21:59:16.698 +01:00 [INF] Executing SQL query for container 'CapitalPlacementTaskDbContext' in partition '?' [Parameters=[@__get_Item_0=?]]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["Id"] = @__get_Item_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:59:16.746 +01:00 [INF] Executed ReadNext (36.5184 ms, 2.95 RU) ActivityId='c0cf735a-8549-40b1-adad-4bf4659bccc7', Container='CapitalPlacementTaskDbContext', Partition='?', Parameters=[@__get_Item_0=?]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["Id"] = @__get_Item_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:59:16.975 +01:00 [INF] Executed ReplaceItem (38.4043 ms, 15.05 RU) ActivityId='0f343c63-7de1-49c4-8a4c-89fd9fd2d3c6', Container='CapitalPlacementTaskDbContext', Id='?', Partition='?'
+2023-10-07 21:59:16.984 +01:00 [INF] Executing OkObjectResult, writing value of type 'CapitalPlacementTask.Common.CreateResponse`1[[System.Collections.Generic.List`1[[CapitalPlacementTask.Models.Stage, CapitalPlacementTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-07 21:59:17.000 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.WorkFlowController.Put (CapitalPlacementTask) in 320.6578ms
+2023-10-07 21:59:17.004 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.WorkFlowController.Put (CapitalPlacementTask)'
+2023-10-07 21:59:17.015 +01:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7041/api/WorkFlow/33b6200e-db28-4034-7956-08dbc77757d1 application/json 98 - 200 - application/json;+charset=utf-8 353.5084ms
+2023-10-07 21:59:31.057 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7041/api/ProgramDetail/07632a86-72d3-4716-9479-08dbc676e6cb - -
+2023-10-07 21:59:31.059 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.ProgramDetailController.Get (CapitalPlacementTask)'
+2023-10-07 21:59:31.065 +01:00 [INF] Route matched with {action = "Get", controller = "ProgramDetail"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller CapitalPlacementTask.Controllers.ProgramDetailController (CapitalPlacementTask).
+2023-10-07 21:59:31.075 +01:00 [INF] Executing SQL query for container 'CapitalPlacementTaskDbContext' in partition '?' [Parameters=[@__get_Item_0=?]]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["Id"] = @__get_Item_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:59:31.089 +01:00 [INF] Executed ReadNext (6.1269 ms, 2.89 RU) ActivityId='de63a567-74f7-4de7-a8a5-c9ca4010e175', Container='CapitalPlacementTaskDbContext', Partition='?', Parameters=[@__get_Item_0=?]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["Id"] = @__get_Item_0))
+OFFSET 0 LIMIT 1
+2023-10-07 21:59:31.098 +01:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2023-10-07 21:59:31.100 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.ProgramDetailController.Get (CapitalPlacementTask) in 31.8309ms
+2023-10-07 21:59:31.106 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.ProgramDetailController.Get (CapitalPlacementTask)'
+2023-10-07 21:59:31.108 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7041/api/ProgramDetail/07632a86-72d3-4716-9479-08dbc676e6cb - - - 204 - - 50.6927ms
+2023-10-07 22:01:05.283 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7041/api/ProgramDetail/33b6200e-db28-4034-7956-08dbc77757d1 - -
+2023-10-07 22:01:05.288 +01:00 [INF] Executing endpoint 'CapitalPlacementTask.Controllers.ProgramDetailController.Get (CapitalPlacementTask)'
+2023-10-07 22:01:05.295 +01:00 [INF] Route matched with {action = "Get", controller = "ProgramDetail"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller CapitalPlacementTask.Controllers.ProgramDetailController (CapitalPlacementTask).
+2023-10-07 22:01:05.310 +01:00 [INF] Executing SQL query for container 'CapitalPlacementTaskDbContext' in partition '?' [Parameters=[@__get_Item_0=?]]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["Id"] = @__get_Item_0))
+OFFSET 0 LIMIT 1
+2023-10-07 22:01:05.387 +01:00 [INF] Executed ReadNext (65.2536 ms, 2.95 RU) ActivityId='b1b90fef-c890-4cb4-8957-2476b1c4bc15', Container='CapitalPlacementTaskDbContext', Partition='?', Parameters=[@__get_Item_0=?]
+SELECT c
+FROM root c
+WHERE ((c["Discriminator"] = "ProgramDetail") AND (c["Id"] = @__get_Item_0))
+OFFSET 0 LIMIT 1
+2023-10-07 22:01:05.414 +01:00 [INF] Executing OkObjectResult, writing value of type 'CapitalPlacementTask.Models.ProgramDetail'.
+2023-10-07 22:01:05.417 +01:00 [INF] Executed action CapitalPlacementTask.Controllers.ProgramDetailController.Get (CapitalPlacementTask) in 114.4587ms
+2023-10-07 22:01:05.422 +01:00 [INF] Executed endpoint 'CapitalPlacementTask.Controllers.ProgramDetailController.Get (CapitalPlacementTask)'
+2023-10-07 22:01:05.430 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7041/api/ProgramDetail/33b6200e-db28-4034-7956-08dbc77757d1 - - - 200 - application/json;+charset=utf-8 146.8394ms
+2023-10-07 22:07:14.674 +01:00 [INF] Starting up...
+2023-10-07 22:07:22.967 +01:00 [INF] Now listening on: https://localhost:7041
+2023-10-07 22:07:22.974 +01:00 [INF] Now listening on: http://localhost:5117
+2023-10-07 22:07:22.983 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-07 22:07:22.985 +01:00 [INF] Hosting environment: Development
+2023-10-07 22:07:22.988 +01:00 [INF] Content root path: C:\Projects\ASP\CapitalPlacementTask\CapitalPlacementTask
+2023-10-07 22:07:23.368 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/index.html - -
+2023-10-07 22:07:23.722 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_vs/browserLink - -
+2023-10-07 22:07:23.723 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - -
+2023-10-07 22:07:23.728 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/index.html - - - 200 - text/html;charset=utf-8 361.1768ms
+2023-10-07 22:07:23.749 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - - - 200 12372 application/javascript;+charset=utf-8 25.4652ms
+2023-10-07 22:07:23.762 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.1114ms
+2023-10-07 22:07:24.432 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - -
+2023-10-07 22:07:24.898 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 466.1374ms

@@ -27,6 +27,8 @@ namespace CapitalPlacementTask
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped<IProgramDetailRepository, ProgramDetailRepository>();
             services.AddScoped<IProgramDetailService, ProgramDetailService>();
+            services.AddScoped<IApplicationFormService, ApplicationFormService>();
+            services.AddScoped<IStageService, StageService>();
             return services;
         }
     }
