@@ -1,3 +1,5 @@
+using CapitalPlacementTask;
+using CapitalPlacementTask.Data;
 using Serilog;
 
 try
@@ -13,6 +15,7 @@ try
     Log.Logger = logger;
     Log.Information("Starting up...");
 
+    builder.Services.AddApplicationServices(builder.Configuration);
 
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
@@ -25,7 +28,12 @@ try
         app.UseSwagger();
         app.UseSwaggerUI();
     }
-
+    using (var scope = app.Services.CreateScope())
+    {
+        var context = scope.ServiceProvider.GetRequiredService<CapitalPlacementTaskDbContext>();
+        await context.Database.EnsureDeletedAsync();
+        await context.Database.EnsureCreatedAsync();
+    }
     app.UseHttpsRedirection();
 
     app.UseAuthorization();

@@ -19,5 +19,7 @@ namespace CapitalPlacementTask.Models
         public bool IsRemote { get; set; }
         public MinimumQualificationEnum? MinimumQualification { get; set; }
         public int? MaximumApplication { get; set; }
+        public ApplicationForm? ApplicationForm { get; set; }
+        public List<Stage>? Stages { get; set; }
     }
 }

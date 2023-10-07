@@ -1,7 +1,9 @@
 using System.Reflection;
 using CapitalPlacementTask.Data;
+using CapitalPlacementTask.Interfaces;
 using CapitalPlacementTask.IRepositories;
 using CapitalPlacementTask.Repositories;
+using CapitalPlacementTask.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace CapitalPlacementTask
@@ -24,7 +26,7 @@ namespace CapitalPlacementTask
 
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped<IProgramDetailRepository, ProgramDetailRepository>();
-
+            services.AddScoped<IProgramDetailService, ProgramDetailService>();
             return services;
         }
     }
