@@ -83,5 +83,5 @@ The project is organized as follows:
 
 ## API Documentation
 
-For detailed API documentation and usage examples, refer to the [API Documentation](documentation.md) file.
+For detailed API documentation and usage examples, refer to the [API Documentation](DOCUMENTATION.md) file.
 ```
