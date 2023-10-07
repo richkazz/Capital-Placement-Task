@@ -29,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
 
 - [.NET SDK](https://dotnet.microsoft.com/download/dotnet) installed (version specified in the project)
 - [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/) for development
-- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) or another compatible database for data storage
+- [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator) or another compatible database for data storage
 
 ## Getting Started
 
