@@ -362,3 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /CapitalPlacementTask/appsettings.Development.json
+/CapitalPlacementTask/log.txt
