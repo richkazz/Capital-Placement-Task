@@ -831,3 +831,35 @@ OFFSET 0 LIMIT 1
 2023-10-07 22:07:23.762 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.1114ms
 2023-10-07 22:07:24.432 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - -
 2023-10-07 22:07:24.898 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 466.1374ms
+2023-10-07 23:44:47.224 +01:00 [INF] Starting up...
+2023-10-07 23:44:59.814 +01:00 [INF] Now listening on: https://localhost:7041
+2023-10-07 23:44:59.822 +01:00 [INF] Now listening on: http://localhost:5117
+2023-10-07 23:44:59.829 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-07 23:44:59.831 +01:00 [INF] Hosting environment: Development
+2023-10-07 23:44:59.833 +01:00 [INF] Content root path: C:\Projects\ASP\CapitalPlacementTask\CapitalPlacementTask
+2023-10-07 23:45:00.266 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/index.html - -
+2023-10-07 23:45:00.890 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/index.html - - - 200 - text/html;charset=utf-8 627.9175ms
+2023-10-07 23:45:01.006 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - -
+2023-10-07 23:45:01.016 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - - - 200 12372 application/javascript;+charset=utf-8 9.6831ms
+2023-10-07 23:45:01.027 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_vs/browserLink - -
+2023-10-07 23:45:01.050 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.9744ms
+2023-10-07 23:45:01.564 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - -
+2023-10-07 23:45:01.831 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.0006ms
+2023-10-08 00:10:28.337 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/index.html - -
+2023-10-08 00:10:28.350 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/index.html - - - 200 - text/html;charset=utf-8 13.7323ms
+2023-10-08 00:10:29.021 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - -
+2023-10-08 00:10:29.030 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - - - 200 12372 application/javascript;+charset=utf-8 9.3971ms
+2023-10-08 00:10:29.277 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_vs/browserLink - -
+2023-10-08 00:10:29.284 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.9023ms
+2023-10-08 00:10:34.630 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - -
+2023-10-08 00:10:34.659 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 29.1905ms
+2023-10-08 00:10:39.627 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/index.html - -
+2023-10-08 00:10:39.634 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/index.html - - - 200 - text/html;charset=utf-8 6.6086ms
+2023-10-08 00:10:39.843 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - -
+2023-10-08 00:10:39.843 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/_vs/browserLink - -
+2023-10-08 00:10:39.846 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_framework/aspnetcore-browser-refresh.js - - - 200 12372 application/javascript;+charset=utf-8 2.5475ms
+2023-10-08 00:10:39.860 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.1968ms
+2023-10-08 00:10:39.979 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - -
+2023-10-08 00:10:39.991 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7041/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.4282ms
+2023-10-08 00:29:24.749 +01:00 [INF] Application is shutting down...
+2023-10-08 00:29:24.818 +01:00 [INF] Shut down complete
