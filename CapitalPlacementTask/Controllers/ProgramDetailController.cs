@@ -16,13 +16,13 @@ namespace CapitalPlacementTask.Controllers
         {
             ProgramDetailService = programDetailService;
         }
-        // GET: api/<ProgramDetailController>
-        [HttpGet]
-        [ProducesResponseType(typeof(List<ProgramDetail>), (int)HttpStatusCode.OK)]
-        public async Task<IActionResult> Get()
-        {
-            return Ok(await ProgramDetailService.GetAll());
-        }
+        //// GET: api/<ProgramDetailController>
+        //[HttpGet]
+        //[ProducesResponseType(typeof(List<ProgramDetail>), (int)HttpStatusCode.OK)]
+        //public async Task<IActionResult> Get()
+        //{
+        //    return Ok(await ProgramDetailService.GetAll());
+        //}
 
         // GET api/<ProgramDetailController>/5
         [HttpGet("{id}")]
